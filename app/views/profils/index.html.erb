@@ -1,14 +1,10 @@
-<p style="color: green"><%= notice %></p>
+<h1> Welcome on man on a mission</h1>
 
-<h1>Profils</h1>
-
-<div id="profils">
-  <% @profils.each do |profil| %>
-    <%= render profil %>
-    <p>
-      <%= link_to "Show this profil", profil %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New profil", new_profil_path %>
+<%= @profils.each do |profil| %>
+    <div>
+        <p><%= profil.full_name %></p>
+        <p><%= profil.price %> €/Jour</p>
+        <p><%= profil.lang %></p>
+        <p><%= profil.nationality %> </p>
+    </div>
+<% end %>
