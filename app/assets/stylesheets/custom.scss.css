@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+
+}
+
+body{
+    background: #010001;
+
+}
+
+.logo__image{
+    width: 60px;
+
+}
+
+
+.nav__links{
+    padding: 30px 10%;
+    flex-direction: column;
+    display: flex;
+    line-height: 5em;
+    font-size: 1.5em;
+}
+
+
+
+button{
+    background: #1d9bf1;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 1rem 4rem 1rem 4rem;
+    border: none;
+}
