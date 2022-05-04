@@ -1,3 +1,2 @@
-# How to use Cayana
+# How to use Twitter
 
-* coming ASAP
