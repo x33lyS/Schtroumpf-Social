@@ -3,8 +3,8 @@
 /* Can be forced with data-theme="light" */
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  --primary: #fdd835;
-  --primary-hover: #fbc02d;
+  --primary: #35c4fd;
+  --primary-hover: #2d9efb;
   --primary-focus: rgba(253, 216, 53, 0.125);
   --primary-inverse: rgba(0, 0, 0, 0.75);
 }
@@ -13,8 +13,8 @@
 /* Automatically enabled if user has Dark mode enabled */
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --primary: #fdd835;
-    --primary-hover: #ffeb3b;
+    --primary: #35c4fd;
+    --primary-hover: #2d9efb;
     --primary-focus: rgba(253, 216, 53, 0.25);
     --primary-inverse: rgba(0, 0, 0, 0.75);
   }
@@ -23,8 +23,8 @@
 /* Yellow Dark scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
 [data-theme="dark"] {
-  --primary: #fdd835;
-  --primary-hover: #ffeb3b;
+  --primary: #35c4fd;
+  --primary-hover: #2d9efb;
   --primary-focus: rgba(253, 216, 53, 0.25);
   --primary-inverse: rgba(0, 0, 0, 0.75);
 }
