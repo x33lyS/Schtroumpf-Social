@@ -1,5 +1,7 @@
 # How to use Schtroumpf social
 
+Schtroumpf social is a ruby Twitter clone made for a school project at Toulouse Ynov Campus
+
 ## Dependencies
 
 - Ruby 3.0.3
@@ -14,6 +16,8 @@ rails s
 ```
 
 ## Navigation
+
+Go to [localhost:3000](http://localhost:3000) in your navigator
 
 - Log-in / Sign-in
 - User profile page
