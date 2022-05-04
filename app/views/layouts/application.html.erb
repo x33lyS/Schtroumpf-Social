@@ -21,15 +21,15 @@
         <div class="item_nav">
         <% if user_signed_in? %>
         <ul>
-          <li><a href="#">Search</a></li>
-          <li> <%= link_to "New Tweet", new_article_path, role: "button" %> </li>
+
+          <li style="margin-top: 20px"> <%= link_to "New Schtroumpf", new_article_path, role: "button" %> </li>
         </ul>
         <% end %>
         </div>
         <ul>
           <li>
 
-            <div class="div_profile item_nav">
+            <div class="div_profile item_nav" style="padding-top: 30px">
             <% if user_signed_in? %>
             <! -- Logged in as <%= current_user.email %>. -->
 
