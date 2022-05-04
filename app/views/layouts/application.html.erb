@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cayana</title>
+    <title>Schtroumpf social</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -14,7 +14,7 @@
         <div class="item_nav">
         <a href="/">
               <%= image_tag ("logo.png") %>
-              <strong>Cayana</strong>
+              <strong>Schtroumpf social</strong>
         </a>
         </div>
 
@@ -22,7 +22,7 @@
         <% if user_signed_in? %>
         <ul>
           <li><a href="#">Search</a></li>
-          <li> <%= link_to "Tsip!", new_article_path, role: "button" %> </li>
+          <li> <%= link_to "New Tweet", new_article_path, role: "button" %> </li>
         </ul>
         <% end %>
         </div>
