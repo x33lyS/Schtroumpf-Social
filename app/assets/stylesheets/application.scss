@@ -1,6 +1,4 @@
 @import "pico.classless";
-/* Yellow Light scheme (Default) */
-/* Can be forced with data-theme="light" */
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
   --primary: #35c4fd;
@@ -8,9 +6,6 @@
   --primary-focus: rgba(253, 216, 53, 0.125);
   --primary-inverse: rgba(0, 0, 0, 0.75);
 }
-
-/* Yellow Dark scheme (Auto) */
-/* Automatically enabled if user has Dark mode enabled */
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --primary: #35c4fd;
@@ -19,17 +14,12 @@
     --primary-inverse: rgba(0, 0, 0, 0.75);
   }
 }
-
-/* Yellow Dark scheme (Forced) */
-/* Enabled if forced with data-theme="dark" */
 [data-theme="dark"] {
   --primary: #35c4fd;
   --primary-hover: #2d9efb;
   --primary-focus: rgba(253, 216, 53, 0.25);
   --primary-inverse: rgba(0, 0, 0, 0.75);
 }
-
-/* Yellow (Common styles) */
 :root {
   --form-element-active-border-color: var(--primary);
   --form-element-focus-color: var(--primary-focus);
@@ -37,10 +27,39 @@
   --switch-checked-background-color: var(--primary);
 }
 
+*{
+  font-family: "Source Code Pro", Monaco, monospace!important;
+}
+html {
+
+  padding: 10px;
+}
+html li::marker {
+  visibility: hidden!important;
+}
 nav {
   margin: 20px;
   height: 100px;
+
+}
+nav a {
+  padding: 50px;
+}
+.navbar-link {
+
+}
+main {
+  justify-content: center;
+
+}
+main h1 {
+  text-align: center;
+}
+
+
+img {
   display: flex;
+  justify-content: center;
 }
 
 .div_profile {
@@ -51,11 +70,13 @@ nav {
 button {
    background: none;
    border: none;
-   margin: auto;
-   height: 100%;
+   margin: 20px;
+   height: 2000%;
 }
 
-
+button:hover {
+  color: blue;
+}
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
